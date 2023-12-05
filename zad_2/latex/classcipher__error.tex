@@ -1,0 +1,73 @@
+\hypertarget{classcipher__error}{}\doxysection{cipher\+\_\+error Class Reference}
+\label{classcipher__error}\index{cipher\_error@{cipher\_error}}
+
+
+Класс вызова исключений  
+
+
+
+
+{\ttfamily \#include $<$coder.\+h$>$}
+
+
+
+Inheritance diagram for cipher\+\_\+error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classcipher__error__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cipher\+\_\+error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classcipher__error__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcipher__error_aac662e216a84bfeb873303c7b88d029e}{cipher\+\_\+error}} (const std\+::string \&what\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Валидация текста \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcipher__error_a18cf27d9c2cd2538d3cb8f17e9a55f3e}\label{classcipher__error_a18cf27d9c2cd2538d3cb8f17e9a55f3e}} 
+{\bfseries cipher\+\_\+error} (const char $\ast$what\+\_\+arg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс вызова исключений 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcipher__error_aac662e216a84bfeb873303c7b88d029e}\label{classcipher__error_aac662e216a84bfeb873303c7b88d029e}} 
+\index{cipher\_error@{cipher\_error}!cipher\_error@{cipher\_error}}
+\index{cipher\_error@{cipher\_error}!cipher\_error@{cipher\_error}}
+\doxysubsubsection{\texorpdfstring{cipher\_error()}{cipher\_error()}}
+{\footnotesize\ttfamily cipher\+\_\+error\+::cipher\+\_\+error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{what\+\_\+arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Валидация текста 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em what\+\_\+arg} & После проверки текста при помощи get\+Valid\+Text, если возвращенный параметр вызывает исключения, причина вызова исключений передается в качестве параметра функцию. @warnings Текст не должен содержать цифры, специальные знаки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result Расшифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если в качестве текста введена пустая строка \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+coder.\+h\end{DoxyCompactItemize}
