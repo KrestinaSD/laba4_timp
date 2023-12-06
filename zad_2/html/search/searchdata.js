@@ -1,8 +1,8 @@
 var indexSectionsWithContent =
 {
-  0: "cde",
+  0: "cdeg",
   1: "c",
-  2: "cde"
+  2: "cdeg"
 };
 
 var indexSectionNames =
@@ -14,8 +14,8 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Classes",
-  2: "Functions"
+  0: "Указатель",
+  1: "Классы",
+  2: "Функции"
 };
 

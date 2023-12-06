@@ -16,7 +16,7 @@
  * @details Ключ
  * Для шифрования - метод encrypt
  * для расшифровки - метод decrypt
- * @warnings Реализация для русского и английского языка!
+ * @warning Реализация для русского и английского языка!
  */
 class coder
 {
@@ -40,21 +40,21 @@ public:
     coder()=delete; 
     /**
  	* @brief Конструктор класса
- 	* @param [in] skey Ключ для шифрования
+ 	* @param [in] ws_key Ключ для шифрования
  	* @warning Ключ должен быть целым числов
  	* @throw Invalide key, при неверном ключе
  	*/
     coder(std::wstring & ws_key);
     /** @brief Зашифрование
-     ** @param [in] text Открытый текст на русском/английском языке
-     ** @warnings Текст не должен содержать цифры, специальные знаки.
+     ** @param [in] open_text Открытый текст на русском/английском языке
+     ** @warning Текст не должен содержать цифры, специальные знаки.
      ** @return result Зашифрованный текст
      ** @throw cipher_error Если в качестве текста введена пустая строка
      */
     std::wstring encrypt(const std::wstring& open_text);
     /** @brief Расшифрование
-     ** @param [in] text Зашифрованный текст на русском/английском языке
-     ** @warnings Текст не должен содержать цифры, специальные знаки.
+     ** @param [in] cipher_text Зашифрованный текст на русском/английском языке
+     ** @warning Текст не должен содержать цифры, специальные знаки.
      ** @return result Расшифрованный текст
      ** @throw cipher_error Если в качестве текста введена пустая строка
      */
@@ -66,14 +66,14 @@ public:
  */
 class cipher_error: public std::invalid_argument {
 public:
- /** @brief Валидация текста
-     ** @param [in] what_arg После проверки текста при помощи getValidText, если возвращенный параметр вызывает исключения, причина вызова исключений передается в качестве параметра функцию.
-     ** @warnings Текст не должен содержать цифры, специальные знаки.
-     ** @return result Расшифрованный текст
-     ** @throw cipher_error Если в качестве текста введена пустая строка
+     /** @brief Обработка ошибки
+     ** @param [in] what_arg Открытый текст на русском/английском языке
      */
 	explicit cipher_error (const std::string& what_arg):
 		std::invalid_argument(what_arg) {}
+	/** @brief Обработка ошибки
+     ** @param [in] what_arg Открытый текст на русском/английском языке
+     */
 	explicit cipher_error (const char* what_arg):
 		std::invalid_argument(what_arg) {}
 };

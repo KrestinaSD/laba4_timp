@@ -1,4 +1,4 @@
-\hypertarget{classcipher__error}{}\doxysection{cipher\+\_\+error Class Reference}
+\hypertarget{classcipher__error}{}\doxysubsection{Класс cipher\+\_\+error}
 \label{classcipher__error}\index{cipher\_error@{cipher\_error}}
 
 
@@ -11,8 +11,7 @@
 
 
 
-Inheritance diagram for cipher\+\_\+error\+:
-\nopagebreak
+Граф наследования\+:cipher\+\_\+error\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,53 +20,58 @@ Inheritance diagram for cipher\+\_\+error\+:
 \end{figure}
 
 
-Collaboration diagram for cipher\+\_\+error\+:
-\nopagebreak
+Граф связей класса cipher\+\_\+error\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=203pt]{classcipher__error__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Открытые члены}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classcipher__error_aac662e216a84bfeb873303c7b88d029e}{cipher\+\_\+error}} (const std\+::string \&what\+\_\+arg)
-\begin{DoxyCompactList}\small\item\em Валидация текста \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classcipher__error_a18cf27d9c2cd2538d3cb8f17e9a55f3e}\label{classcipher__error_a18cf27d9c2cd2538d3cb8f17e9a55f3e}} 
-{\bfseries cipher\+\_\+error} (const char $\ast$what\+\_\+arg)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Обработка ошибки \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcipher__error_a18cf27d9c2cd2538d3cb8f17e9a55f3e}{cipher\+\_\+error}} (const char $\ast$what\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Обработка ошибки \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\doxysubsubsection{Подробное описание}
 Класс вызова исключений 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsubsection{Конструктор(ы)}
 \mbox{\Hypertarget{classcipher__error_aac662e216a84bfeb873303c7b88d029e}\label{classcipher__error_aac662e216a84bfeb873303c7b88d029e}} 
 \index{cipher\_error@{cipher\_error}!cipher\_error@{cipher\_error}}
 \index{cipher\_error@{cipher\_error}!cipher\_error@{cipher\_error}}
-\doxysubsubsection{\texorpdfstring{cipher\_error()}{cipher\_error()}}
+\doxyparagraph{\texorpdfstring{cipher\_error()}{cipher\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily cipher\+\_\+error\+::cipher\+\_\+error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{what\+\_\+arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
 
 
 
-Валидация текста 
+Обработка ошибки 
 
 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em what\+\_\+arg} & После проверки текста при помощи get\+Valid\+Text, если возвращенный параметр вызывает исключения, причина вызова исключений передается в качестве параметра функцию. @warnings Текст не должен содержать цифры, специальные знаки. \\
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em what\+\_\+arg} & Открытый текст на русском/английском языке \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-result Расшифрованный текст 
-\end{DoxyReturn}
+\mbox{\Hypertarget{classcipher__error_a18cf27d9c2cd2538d3cb8f17e9a55f3e}\label{classcipher__error_a18cf27d9c2cd2538d3cb8f17e9a55f3e}} 
+\index{cipher\_error@{cipher\_error}!cipher\_error@{cipher\_error}}
+\index{cipher\_error@{cipher\_error}!cipher\_error@{cipher\_error}}
+\doxyparagraph{\texorpdfstring{cipher\_error()}{cipher\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily cipher\+\_\+error\+::cipher\+\_\+error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{what\+\_\+arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
 
-\begin{DoxyExceptions}{Exceptions}
-{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если в качестве текста введена пустая строка \\
+
+
+Обработка ошибки 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em what\+\_\+arg} & Открытый текст на русском/английском языке \\
 \hline
-\end{DoxyExceptions}
+\end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
 \item 
 coder.\+h\end{DoxyCompactItemize}
